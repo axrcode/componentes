@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modales</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.4 -->
+    <link href="templates/default/libraries/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="templates/default/libraries/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="templates/default/libraries/jquery3.6/jquery.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="templates/default/libraries/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="templates/default/libraries/plugins/chartjs/Chart.js" type="text/javascript"></script>
+
+    <!-- CSS Styles -->
+    <link href="modales.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="container">
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <br>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_estados">Modal de estados</button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_redireccionar">Modal de redireccionar</button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_confirmar">Modal de confirmacion</button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_help">Modal de ayuda</button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_error">Modal de error</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar estados y cerrar en la misma pantalla a utilizar -->
+    <div class="bi_modal" id="modal_estados" style="display: none;">
+        <div class="bi_modal__content">
+            <div class="bi_modal__icon">
+                <img src="templates/default/icons/alerthelp.svg">
+            </div>
+            
+            <div class="bi_modal__info">Producto agregado exitosamente</div>
+
+            <button type="button" id="btn_close_modal_estados" class="bi_modal__btn_close">
+                Aceptar
+            </button>
+
+            <script>
+                $('#btn_open_modal_estados').click(function() {
+                    $('#modal_estados').fadeIn(500);
+                })
+                $('#btn_close_modal_estados').click(function () {
+                    $('#modal_estados').fadeOut(500);
+                })
+            </script>
+        </div>
+    </div>
+    
+    <!-- Modal para mostrar estados y al cerrar redireccionar a otra pantalla -->
+    <div class="bi_modal" id="modal_redireccionar" style="display: none;">
+        <div class="bi_modal__content">
+            <div class="bi_modal__icon">
+                <img src="templates/default/icons/alertsuccess.svg">
+            </div>
+            
+            <div class="bi_modal__info">Producto agregado exitosamente</div>
+
+            <button type="button" id="btn_close_modal_redireccionar" class="bi_modal__btn_close">
+                Aceptar
+            </button>
+
+            <script>
+                $('#btn_open_modal_redireccionar').click(function() {
+                    $('#modal_redireccionar').fadeIn(500);
+                })
+                $('#btn_close_modal_redireccionar').click(function () {
+                    document.location = 'modales.html';
+                })
+            </script>
+        </div>
+    </div>
+    
+    <!-- Modal para confirmacion de procesos, con boton para cancelar en la parte superior derecha "X" -->
+    <div class="bi_modal" id="modal_confirmar" style="display: none;">
+        <div class="bi_modal__content">
+
+            <button id="btn_close_modal_confirmar" class="bi_modal__btn_close_exit">
+                <i class="fa fa-times"></i>
+            </button>
+
+            <div class="bi_modal__icon">
+                <img src="templates/default/icons/modal-pregunta.svg">
+            </div>
+            
+            <div class="bi_modal__info">¿Seguro quieres reiniciar contraseña?</div>
+            <input type="hidden" id="id_elemento">
+
+            <button type="button" id="btn_accept_modal_confirmar" class="bi_modal__btn_close">
+                Confirmar
+            </button>
+
+            <script>
+                $('#btn_open_modal_confirmar').click(function() {
+                    $('#modal_confirmar').fadeIn(500);
+                });
+                $('#btn_close_modal_confirmar').click(function () {
+                    $('#modal_confirmar').fadeOut(500);
+                })
+                $('#btn_accept_modal_confirmar').click(function () {
+                    let id = $('#id_elemento').val(); // id del elemento que se va a operar (si lo requiere)
+                    console.log('Procesando algo...')
+                    /* 
+                     * Agregar la funcion del proceso que se esta confirmando
+                     *
+                     */
+                    $('#modal_confirmar').fadeOut(500);
+                })
+            </script>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar estados y al cerrar redireccionar a otra pantalla -->
+    <div class="bi_modal" id="modal_help" style="display: none;">
+        <div class="bi_modal__content">
+            <div class="bi_modal__icon_help">
+                <img src="templates/default/icons/alerthelp.svg">
+            </div>
+            
+            <div class="bi_modal__info_help">Si necesitas ayuda comunícate al</div>
+            <div class="bi_modal__info_help_number">2411 6626</div>
+
+            <button type="button" id="btn_close_modal_help" class="bi_modal__btn_close_help">
+                Aceptar
+            </button>
+
+            <div class="bi_modal__info_help_preguntas">
+                <a href="">Preguntas frecuentes</a>
+            </div>
+
+            <script>
+                $('#btn_open_modal_help').click(function() {
+                    $('#modal_help').fadeIn(500);
+                })
+                $('#btn_close_modal_help').click(function () {
+                    $('#modal_help').fadeOut(500);
+                })
+            </script>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar estados y al cerrar redireccionar a otra pantalla -->
+    <div class="bi_modal" id="modal_error" style="display: none;">
+        <div class="bi_modal__content">
+            <div class="bi_modal__icon_help">
+                <img src="templates/default/icons/alerterror.svg">
+            </div>
+            
+            <div class="bi_modal__info_error">ERROR</div>
+            <div class="bi_modal__info_error_msj">Tu usuario ha sido bloqueado</div>
+            <div class="bi_modal__info_error_msj_help">Si necesitas ayuda comunícate al <span class="bi_modal__info_error_msj_help_number">2411 6626</span></div>
+
+            <button type="button" id="btn_close_modal_error" class="bi_modal__btn_close_error">
+                Aceptar
+            </button>
+
+            <script>
+                $('#btn_open_modal_error').click(function() {
+                    $('#modal_error').fadeIn(500);
+                })
+                $('#btn_close_modal_error').click(function () {
+                    $('#modal_error').fadeOut(500);
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>

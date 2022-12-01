@@ -1,0 +1,155 @@
+:root {
+    /* Colors: */
+    --blanco: #FFFFFF;
+    --gris: #F4F4F4;
+    --gris-1: #EBEBEB;
+    --gris-2: #CECECE;
+    --gris-3: #8C8C8C;
+    --gris-4: #666666;
+    --rojo: #DD1B37;
+    --verde: #11B260;
+    --verde-secundario: #89F599;
+    --azul-digital: #00C1D4;
+    --azul-financiero: #2C8B9E;
+    --azul-experto: #003865;
+    --amarillo-optimista: #FFB81C;
+    --amarillo-empatico: #FDD26E;
+}
+
+@font-face {
+    font-family: 'Lato';
+        src: url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Regular.ttf),
+          url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Bold.ttf),
+          url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Black.ttf);
+}
+
+* {
+    font-family: 'Lato';
+}
+
+/* COMPONENTE: Modales */
+    .bi_table {
+
+    }
+    .bi_table > thead {
+        background: var(--blanco);
+        border-left: 5rem solid #00000000;
+        border-right: 5rem solid #00000000;
+    }
+    .bi_table > thead > tr > th {
+        border: none;  
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: var(--gris-4);
+        padding: 1rem 0;
+    }
+    .bi_table > tbody {
+        background: none;  
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 7px;
+        border-left: 5rem solid #00000000;
+        border-right: 5rem solid #00000000;
+        border-bottom: 1rem solid #00000000;
+    }
+    .bi_table > tbody > tr > td {
+        border: none;  
+        border-bottom: 0.5px solid var(--azul-experto);
+        text-align: center;
+        color: var(--azul-experto);
+        max-width: 20px;
+        font-size: 1.4rem;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        padding: 2rem 1rem;
+    }
+    .bi_table > tbody > tr > td > .bi_table__degradado {
+        position: relative;
+        margin-top: -2rem;
+        float: right;
+        width: 20%;
+        background: var(--blanco);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--blanco) 50%, var(--blanco) 100%);
+    }
+    .bi_table > tbody > tr > td .bi_table__btn_actions,
+    .bi_table > tbody > tr > td .bi_table__btn_actions:active {
+        background: none;
+        outline: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    .bi_table .bi_table__bold {
+        font-weight: bold;
+    }
+    .bi_table .bi_table__btn_actions + .dropdown-menu {
+        -moz-box-shadow: 0px 3px 6px #00000050;
+        -webkit-box-shadow: 0px 3px 6px #00000050;
+        box-shadow: 0px 3px 6px #00000050;
+        border-radius: 7px;
+        border: none;
+    }
+    .bi_table .bi_table__btn_actions + .dropdown-menu a {
+        color: var(--azul-experto);
+        font-weight: bold;
+    }
+    .bi_table .bi_table__btn_actions + .dropdown-menu a:hover {
+        background: none;
+    }
+    .bi_table .bi_table__btn_actions + .dropdown-menu .fa-angle-right {
+        color: var(--azul-experto);
+        font-size: 2rem;
+    }
+    .bi_table .dropdown-menu {
+        top: 0;
+        margin-left: 6rem;
+    }
+    .bi_table__checkbox{
+        display: inline-block;
+        width: 50px;
+        height: 28px;
+        background: var(--gris-1);
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        transition: .2s;
+        margin: 0;
+    }
+    .bi_table__checkbox::after{
+        content: '';
+        display: block;
+        width: 21px;
+        height: 21px;
+        background: var(--blanco);
+        border-radius: 100px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        transition: .2s;
+    }
+    .bi_table__checkbox_custom {
+        display: none;
+    }
+    .bi_table__icon_eye {
+        width: 3rem;
+        cursor: pointer;
+        content: url("templates/default/icons/eye.svg");
+    }
+    .bi_table__icon_reinicio_contraseña {
+        width: 2rem;
+        cursor: pointer;
+        content: url("templates/default/icons/reiniciocontra.svg");
+    }
+    .bi_table__icon_ajustes {
+        width: 2.5rem;
+        content: url("templates/default/icons/ajustes.svg");
+    }
+    .bi_table__icon_ajustes:hover {
+        content: url("templates/default/icons/ajustes-hover.svg");
+    }
+/* FIN COMPONENTE: Modales */

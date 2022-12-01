@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modales</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.4 -->
+    <link href="templates/default/libraries/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="templates/default/libraries/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="templates/default/libraries/jquery3.6/jquery.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="templates/default/libraries/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="templates/default/libraries/plugins/chartjs/Chart.js" type="text/javascript"></script>
+
+    <!-- CSS Styles -->
+    <link href="tablas.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="container">
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <br><br>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <table id="table_id" class="table bi_table">
+                <thead>
+                    <tr>
+                        <th style="width: 13%">Usuario</th>
+                        <th style="width: 15%">Nombre del Comercio</th>
+                        <th style="width: 13%">Teléfono del Usuario</th>
+                        <th style="width: 10%">Perfil</th>
+                        <th style="width: 13%">Información Completa</th>
+                        <th style="width: 13%">Reinicio de Contraseña</th>
+                        <th style="width: 10%">Activo</th>
+                        <th style="width: 10%">Modificar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_1:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_1:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_1"
+                                class="bi_table__check_label_1 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_1" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_2:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_2:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_2"
+                                class="bi_table__check_label_2 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_2" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_3:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_3:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_3"
+                                class="bi_table__check_label_3 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_3" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_1:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_1:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_1"
+                                class="bi_table__check_label_1 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_1" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_2:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_2:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_2"
+                                class="bi_table__check_label_2 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_2" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AOrellana</td>
+                        <td class="bi_table__bold">Constructura HManasesia Multiple Multiple Multiple Multiple Multiple Multiple Multiple
+                            <div class="bi_table__degradado"> &nbsp; </div>
+                        </td>
+                        <td>5678-9012</td>
+                        <td>Operador</td>
+                        <td><i class="bi_table__icon_eye"></i></td>
+                        <td><i class="bi_table__icon_reinicio_contraseña"></i></td>
+                        <td>
+                            <style>
+                                .bi_table__check_label_3:checked + .bi_table__checkbox::after{
+                                    left: 26px;
+                                }
+                                .bi_table__check_label_3:checked + .bi_table__checkbox{
+                                    background: var(--amarillo-optimista);
+                                }
+                            </style>
+                            <input type="checkbox" 
+                                id="bi_table__check_label_3"
+                                class="bi_table__check_label_3 bi_table__checkbox_custom"
+                                checked
+                            >
+                            <label for="bi_table__check_label_3" class="bi_table__checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn bi_table__btn_actions dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="bi_table__icon_ajustes"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            Modificar
+                                            <i class="fa fa-angle-right pull-right"></i> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Eliminar &nbsp;
+                                            <i class="fa fa-trash-o"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

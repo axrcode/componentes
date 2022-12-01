@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="82" height="82"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="82" height="82" fill="#fff"/>
+    <g id="Grupo_7919" data-name="Grupo 7919" transform="translate(6 5)">
+      <g id="Grupo_7725" data-name="Grupo 7725" transform="translate(0 0)">
+        <g id="Grupo_7601" data-name="Grupo 7601" transform="translate(0 0)">
+          <path id="Trazado_16132" data-name="Trazado 16132" d="M569.466,584.907c-19.132,0-35.266,10.9-35.266,17.744v11.8a1.041,1.041,0,0,0,1.013,1.049h68.5a1.041,1.041,0,0,0,1.027-1.049V601.743C604.74,595.1,588.934,584.907,569.466,584.907Zm0,2.1c18.864,0,33.234,9.82,33.234,14.739V613.4H536.235V602.651C536.235,597.987,550.265,587,569.466,587Z" transform="translate(-534.2 -544.411)" fill="#666"/>
+          <ellipse id="Elipse_43" data-name="Elipse 43" cx="16.729" cy="16.729" rx="16.729" ry="16.729" transform="translate(18.477)" fill="#666"/>
+        </g>
+      </g>
+      <path id="Trazado_16169" data-name="Trazado 16169" d="M74.975,473.6h68.02V462.957s.768-6.908-8.981-11.65-17.33-7.114-27.932-5.83-16.018,2.685-22.435,6.793-9.38,6.569-9.38,10.686S74.975,473.6,74.975,473.6Z" transform="translate(-73.543 -403.529)" fill="#666"/>
+    </g>
+  </g>
+</svg>

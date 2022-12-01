@@ -1,0 +1,311 @@
+:root {
+    /* Colors: */
+    --blanco: #FFFFFF;
+    --gris: #F4F4F4;
+    --gris-1: #EBEBEB;
+    --gris-2: #CECECE;
+    --gris-3: #8C8C8C;
+    --gris-4: #666666;
+    --rojo: #DD1B37;
+    --verde: #11B260;
+    --verde-secundario: #89F599;
+    --azul-digital: #00C1D4;
+    --azul-financiero: #2C8B9E;
+    --azul-experto: #003865;
+    --amarillo-optimista: #FFB81C;
+    --amarillo-empatico: #FDD26E;
+}
+
+@font-face {
+    font-family: 'Lato';
+        src: url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Regular.ttf),
+          url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Bold.ttf),
+          url(templates/default/libraries/bootstrap/fonts/Lato/Lato-Black.ttf);
+}
+
+* {
+    font-family: 'Lato';
+}
+
+/* COMPONENTE: Modales */
+    .bi_modal {
+        background-color: rgb(140, 140, 140, 0.73);
+        backdrop-filter: blur(7px);
+        color: var(--blanco);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 900;
+    }
+    .bi_modal__content {
+        background: var(--blanco);
+        color: var(--azul-experto);
+        border-radius: 25px !important;
+        box-shadow: 0px 3px 6px #00000029;
+        padding: 6rem 0 3rem 0;
+        position: relative;
+        text-align: center;
+        width: 600px;
+    }
+
+    /* Icono */
+    .bi_modal__content .bi_modal__icon {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    .bi_modal__content .bi_modal__icon img {
+        width: 8rem;
+    }
+    .bi_modal__content .bi_modal__icon_help {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    .bi_modal__content .bi_modal__icon_help img {
+        width: 8rem;
+    }
+    /* Fin Icono */
+
+    /* Buttons */
+    .bi_modal__content .bi_modal__btn_close {
+        background: var(--azul-experto);
+        border: 0px;
+        border-radius: 25px;
+        color: var(--blanco);
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 2rem 0;
+        padding: 1rem 4rem;
+    }
+    .bi_modal__content .bi_modal__btn_close_help {
+        background: var(--azul-experto);
+        border: 0px;
+        border-radius: 25px;
+        color: var(--blanco);
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 2rem 0;
+        padding: 1rem 4rem;
+    }
+    .bi_modal__content .bi_modal__btn_close_exit { /* Button X */
+        background: none;
+        border: none;
+        font-size: 4rem; 
+        color: var(--gris-2);
+        cursor: pointer; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem 2.5rem;
+    }
+    .bi_modal__content .bi_modal__btn_close_error {
+        background: var(--azul-experto);
+        border: 0px;
+        border-radius: 25px;
+        color: var(--blanco);
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 2rem 0;
+        padding: 1rem 4rem;
+    }
+    .bi_modal__content .bi_modal__btn_close:hover {
+        color:  var(--blanco);
+    }
+    .bi_modal__content .bi_modal__btn_close_help:hover {
+        color:  var(--blanco);
+    }
+    .bi_modal__content .bi_modal__btn_close_error:hover {
+        color:  var(--blanco);
+    }
+    /* Fin Buttons */
+
+    /* Contenidos */
+    .bi_modal__content .bi_modal__info {
+        font-size: 2.7rem;
+        font-weight: bold;
+        padding: 0 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .bi_modal__content .bi_modal__info_help {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0 3rem;
+        margin-top: 3rem;
+    }
+    .bi_modal__content .bi_modal__info_error {
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .bi_modal__content .bi_modal__info_error_msj {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0 3rem;
+        color: var(--gris-4);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .bi_modal__content .bi_modal__info_error_msj_help {
+        font-size: 2rem;
+        padding: 0 3rem;
+        color: var(--gris-4);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .bi_modal__content .bi_modal__info_error_msj_help .bi_modal__info_error_msj_help_number {
+        color: var(--azul-experto);
+        font-weight: bold;
+        border-bottom: 1px solid var(--azul-experto);
+    }
+    .bi_modal__content .bi_modal__info_help_number {
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0 3rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    .bi_modal__content .bi_modal__info_help_preguntas {
+        font-size: 2rem;
+        padding: 0 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .bi_modal__content .bi_modal__info_help_preguntas a {
+        border-bottom: 1px solid var(--azul-experto);
+        text-decoration: none;
+    }
+    /* Fin Contenidos */
+
+    /* Movil */
+    @media(max-width: 768px) {
+        
+        .bi_modal__content {
+            width: 75%;
+        }
+
+        /* Icono */
+        .bi_modal__content .bi_modal__icon {
+            position: absolute;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-top: -10rem;
+        }
+        .bi_modal__content .bi_modal__icon img {
+            width: 7.5rem;
+        }
+        .bi_modal__content .bi_modal__icon_help {
+            position: absolute;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-top: -11rem;
+        }
+        .bi_modal__content .bi_modal__icon_help img {
+            width: 9rem;
+        }
+        /* Fin Icono */
+
+        /* Buttons */
+        .bi_modal__content .bi_modal__btn_close {
+            font-size: 1.3rem;
+            margin: 2rem 0;
+            margin-bottom: 6rem;
+            padding: 1rem 5rem;
+        }
+        .bi_modal__content .bi_modal__btn_close_help {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            margin-bottom: 3rem;
+            padding: 1.3rem 6rem;
+        }
+        .bi_modal__content .bi_modal__btn_close_exit { /* Button X */
+            font-size: 2.5rem; 
+            padding: 1rem 2.5rem;
+            z-index: 901;
+        }
+        .bi_modal__content .bi_modal__btn_close_error {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            margin-bottom: 1rem;
+            padding: 1rem 5rem;
+        }
+        /* Fin Buttons */
+
+        /* Contenidos */
+        .bi_modal__content .bi_modal__info {
+            font-size: 1.8rem;
+            font-weight: 100;
+            padding: 0 4rem;
+        }
+        .bi_modal__content .bi_modal__info_help {
+            font-size: 1.6rem;
+            font-weight: 100;
+        }
+        .bi_modal__content .bi_modal__info_error {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .bi_modal__content .bi_modal__info_error_msj {
+            font-size: 1.7rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .bi_modal__content .bi_modal__info_error_msj_help {
+            font-size: 1.5rem;
+        }
+        .bi_modal__content .bi_modal__info_help_number {
+            font-size: 4.5rem;
+            font-weight: 900;
+            padding: 0 3rem;
+            margin-top: -0.8rem;
+        }
+        .bi_modal__content .bi_modal__info_help_preguntas {
+            font-size: 1.6rem;
+            padding: 0 4rem;
+            margin-bottom: 0;
+        }
+        /* Fin Contenidos */
+    }
+
+    /* Movil pantalla menor a 400px - Contenidos */
+    @media(max-width: 400px) {
+
+        .bi_modal__content .bi_modal__info_help {
+            font-size: 1.4rem;
+        }
+        .bi_modal__content .bi_modal__info_help_number {
+            font-size: 4rem;
+        }
+        .bi_modal__content .bi_modal__info_help_preguntas {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Movil pantalla menor a 300px - Contenidos */
+    @media(max-width: 350) {
+        
+        .bi_modal__content .bi_modal__info_help {
+            font-size: 1.1rem;
+        }
+        .bi_modal__content .bi_modal__info_help_number {
+            font-size: 3rem;
+        }
+        .bi_modal__content .bi_modal__info_help_preguntas {
+            font-size: 1.2rem;
+        }
+    }
+/* Fin COMPONENTE: Modales */
