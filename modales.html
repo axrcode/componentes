@@ -27,20 +27,22 @@
         <div class="col-xs-12 text-center">
             <br>
             <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_estados">Modal de estados</button>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_estados_dosMensajes">Modal de estados dos mensajes</button>
+                </div>
+                <div class="col-lg-4">
                     <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_redireccionar">Modal de redireccionar</button>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_confirmar">Modal de confirmacion</button>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_help">Modal de ayuda</button>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <button type="button" class="btn btn-primary btn-block" id="btn_open_modal_error">Modal de error</button>
                 </div>
             </div>
@@ -66,6 +68,31 @@
                 })
                 $('#btn_close_modal_estados').click(function () {
                     $('#modal_estados').fadeOut(500);
+                })
+            </script>
+        </div>
+    </div>
+    
+    <!-- Modal para mostrar estados con dos mensajes y cerrar en la misma pantalla a utilizar -->
+    <div class="bi_modal" id="modal_estados_dosMensajes" style="display: none;">
+        <div class="bi_modal__content">
+            <div class="bi_modal__icon">
+                <img src="templates/default/icons/alerthelp.svg">
+            </div>
+            
+            <div class="bi_modal__info"><b>¡Cuenta agregada exitosamente!</b></div>
+            <div class="bi_modal__info_other">Puede continuar</div>
+
+            <button type="button" id="btn_close_modal_estados_dosMensajes" class="bi_modal__btn_close">
+                Aceptar
+            </button>
+
+            <script>
+                $('#btn_open_modal_estados_dosMensajes').click(function() {
+                    $('#modal_estados_dosMensajes').fadeIn(500);
+                })
+                $('#btn_close_modal_estados_dosMensajes').click(function () {
+                    $('#modal_estados_dosMensajes').fadeOut(500);
                 })
             </script>
         </div>
@@ -170,7 +197,7 @@
                 <img src="templates/default/icons/alerterror.svg">
             </div>
             
-            <div class="bi_modal__info_error">ERROR</div>
+            <div class="bi_modal__info_error"><b>Error</b></div>
             <div class="bi_modal__info_error_msj">Tu usuario ha sido bloqueado</div>
             <div class="bi_modal__info_error_msj_help">Si necesitas ayuda comunícate al <span class="bi_modal__info_error_msj_help_number">2411 6626</span></div>
 

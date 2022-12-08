@@ -54,6 +54,9 @@
         border-right: 5rem solid #00000000;
         border-bottom: 1rem solid #00000000;
     }
+    .bi_table > tbody > tr > .dropdown_td {
+        overflow-x: inherit;
+    }
     .bi_table > tbody > tr > td {
         border: none;  
         border-bottom: 0.5px solid var(--azul-experto);
@@ -65,7 +68,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         vertical-align: middle;
-        padding: 2rem 1rem;
+        padding: 2rem 0;
     }
     .bi_table > tbody > tr > td > .bi_table__degradado {
         position: relative;
